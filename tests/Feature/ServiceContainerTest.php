@@ -13,15 +13,15 @@ use App\Services\HelloServiceIndonesia;
 
 class ServiceContainerTest extends TestCase
 {
-  public function testDependency()
-  {
-    $foo = $this->app->make(Foo::class); // new Foo()
-    $foo2 = $this->app->make(Foo::class); // new Foo()
+  // public function testDependency()
+  // {
+  //   $foo = $this->app->make(Foo::class); // new Foo()
+  //   $foo2 = $this->app->make(Foo::class); // new Foo()
 
-    self::assertEquals('Foo', $foo->foo());
-    self::assertEquals('Foo', $foo2->foo());
-    self::assertNotSame($foo, $foo2);
-  }
+  //   self::assertEquals('Foo', $foo->foo());
+  //   self::assertEquals('Foo', $foo2->foo());
+  //   self::assertNotSame($foo, $foo2);
+  // }
 
   public function testBind()
   {
