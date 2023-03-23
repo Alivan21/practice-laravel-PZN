@@ -18,7 +18,7 @@ class FacadeTest extends TestCase
 
     self::assertEquals($firstName, $firstName2);
 
-    var_dump(Config::all());
+    // var_dump(Config::all());
   }
   public function testConfigDependency()
   {
@@ -31,8 +31,8 @@ class FacadeTest extends TestCase
     self::assertEquals($firstName, $firstName2);
     self::assertEquals($firstName, $firstName3);
 
-    var_dump(Config::all());
-    var_dump($config->all());
+    // var_dump(Config::all());
+    // var_dump($config->all());
   }
 
   public function testFacadesMock()
